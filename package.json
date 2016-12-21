@@ -1,0 +1,31 @@
+{
+  "name": "multivariate-json-replicaton-service",
+  "version": "0.0.0",
+  "description": "API Service for one-hot-json-encoding",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansteh/multivariate-json-replicaton-service.git"
+  },
+  "keywords": [],
+  "author": "Andre Stehle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ansteh/multivariate-json-replicaton-service/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "got": "^6.6.3",
+    "lodash": "^4.16.6",
+    "one-hot-json": "0.0.3"
+  },
+  "devDependencies": {}
+}
