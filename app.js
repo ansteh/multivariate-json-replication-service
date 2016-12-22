@@ -36,8 +36,20 @@ app.get('/', approveRequest((req, res) => {
   res.status(200).json({ valid: true });
 }));
 
-const sample = (data) => {
-  return data;
+const sample = (data, size) => {
+  size = size || 10;
+  return got.post(config.mv_url, {
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+    	"size": size,
+      "data": data
+    })
+  })
+  .then(res => {
+    return res.body;
+  });
 };
 
 app.post('/replicate', approveRequest((req, res) => {

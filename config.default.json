@@ -1,5 +1,6 @@
 {
   "port": 3000,
+  "mv_url": "http://localhost:5000/replicate/data",
   "hosts": [
     "localhost"
   ]
